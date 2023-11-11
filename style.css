@@ -1,0 +1,130 @@
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+h1,h2,h3,h4,h5,h6,p,a,ul,li {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background:  hsl(210, 60%, 98%)
+}
+
+.notify {
+    max-width: 50rem;
+    background:hsl(0, 0%, 100%) ;
+    border-radius: 1.5rem;
+    margin: 0 auto;
+    margin-top:3.5rem ;
+    height: auto;
+    padding: 1.5rem 2rem;
+} 
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top div {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: hsl(224, 21%, 14%);
+}
+
+.top div span {
+    border-radius: .3rem;
+    padding: .2rem .8rem;
+    color: hsl(0, 0%, 100%) ;
+    background:  hsl(219, 85%, 26%)
+}
+
+.top a{
+    color:  hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+
+.notifications{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    margin-top: 2rem;
+}
+
+.notifications .card  {
+    display: flex;
+    gap: .7rem;
+    padding: 1rem ;
+    border-radius: .3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.active {
+    background:  hsl(210, 60%, 98%);
+}
+
+.card .hidden {
+    display: none; 
+}
+
+.notifications .card  div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* .notifications .card > div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+    width: 100% ;
+} */
+
+.notifications .card img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.notifications .card img:last-child{
+    position: absolute;
+    right: 1rem;
+
+}
+.notifications .card div p {
+    font-size: 1rem;
+    word-spacing: .2rem;
+    color: hsl(219, 12%, 42%);
+}
+.notifications .card div p b{
+    color: hsl(224, 21%, 14%);
+}
+
+.notifications .card div p span{
+    color:  hsl(219, 85%, 26%);
+}
+
+.notifications .card div p i{
+    font-size: .6rem;
+    margin-left: .4rem;
+    color:  hsl(1, 90%, 64%);
+}
+
+.notifications .message{
+    border: .5px solid hsl(219, 12%, 42%);
+    border-radius: .5rem;
+    color:  hsl(219, 12%, 42%);
+    word-spacing: .5rem;
+    padding: 1rem;
+    /* margin-left: 4rem; */
+}
